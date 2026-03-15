@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Form Đăng Ký</title>
+
+<link rel="stylesheet" href="nangcapbai1.css">
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<form id="registerForm">
+
+<h2>Đăng ký tài khoản</h2>
+
+<label>Họ và tên</label>
+<input type="text" id="fullname" maxlength="50">
+<div id="nameCount">0/50</div>
+<div class="error" id="fullnameError"></div>
+
+
+<label>Email</label>
+<input type="text" id="email">
+<div class="error" id="emailError"></div>
+
+
+<label>Mật khẩu</label>
+
+<div class="password-box">
+<input type="password" id="password">
+<span id="togglePassword">👁</span>
+</div>
+
+<div class="strength-bar">
+<div id="strength"></div>
+</div>
+
+<div class="error" id="passwordError"></div>
+
+
+<label>Xác nhận mật khẩu</label>
+<input type="password" id="confirmPassword">
+<div class="error" id="confirmPasswordError"></div>
+
+
+<p>Giới tính</p>
+
+<label>
+<input type="radio" name="gender" value="Nam"> Nam
+</label>
+
+<label>
+<input type="radio" name="gender" value="Nữ"> Nữ
+</label>
+
+<div class="error" id="genderError"></div>
+
+
+<label>
+<input type="checkbox" id="terms"> Tôi đồng ý điều khoản
+</label>
+
+<div class="error" id="termsError"></div>
+
+<button type="submit">Đăng ký</button>
+
+</form>
+
+</div>
+
+<script src="nangcapbai.js"></script>
+
+</body>
+</html>

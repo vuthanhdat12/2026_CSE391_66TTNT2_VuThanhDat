@@ -1,0 +1,146 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family: "Segoe UI", Arial, sans-serif;
+background: linear-gradient(135deg,#4facfe,#00f2fe);
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:20px;
+}
+
+.container{
+width:100%;
+max-width:420px;
+background:white;
+padding:35px 30px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+h2{
+text-align:center;
+margin-bottom:25px;
+color:#333;
+}
+
+label{
+display:block;
+margin-top:15px;
+font-weight:500;
+color:#444;
+}
+
+input{
+width:100%;
+padding:10px 12px;
+margin-top:6px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:14px;
+transition:0.2s;
+}
+
+input:focus{
+border-color:#4facfe;
+outline:none;
+box-shadow:0 0 4px rgba(79,172,254,0.4);
+}
+
+button{
+width:100%;
+margin-top:25px;
+padding:12px;
+border:none;
+border-radius:6px;
+background:#4facfe;
+color:white;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#2c8ef5;
+}
+
+/* error */
+
+.error{
+font-size:13px;
+color:red;
+margin-top:3px;
+}
+
+/* password toggle */
+
+.password-box{
+position:relative;
+}
+
+#togglePassword{
+position:absolute;
+right:12px;
+top:50%;
+transform:translateY(-50%);
+cursor:pointer;
+font-size:16px;
+}
+
+/* password strength */
+
+.strength-bar{
+height:6px;
+width:100%;
+background:#eee;
+border-radius:5px;
+margin-top:6px;
+overflow:hidden;
+}
+
+#strength{
+height:100%;
+width:0%;
+border-radius:5px;
+transition:0.3s;
+}
+
+/* name counter */
+
+#nameCount{
+font-size:12px;
+color:#666;
+margin-top:3px;
+}
+
+/* radio + checkbox */
+
+input[type="radio"],
+input[type="checkbox"]{
+width:auto;
+margin-right:5px;
+}
+
+label input{
+margin-right:5px;
+}
+
+/* responsive */
+
+@media(max-width:500px){
+
+.container{
+padding:25px 20px;
+}
+
+h2{
+font-size:22px;
+}
+
+}
